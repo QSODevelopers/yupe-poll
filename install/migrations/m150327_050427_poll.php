@@ -29,17 +29,17 @@ class m150327_050427_poll extends CDbMigration
 			'timestamp'  => "integer NOT NULL DEFAULT '0'",
 		], 'ENGINE=InnoDB DEFAULT CHARSET=utf8');
 
-		$this->addForeignKey("fk_{{poll_vote}}_user_user", "{{poll_vote}}", "user_id", "{{user_user}}", "id");
-		$this->addForeignKey("fk_{{poll_vote}}_poll_choice", "{{poll_vote}}", "choice_id", "{{poll_choice}}", "id", 'CASCADE', 'CASCADE');
 		$this->addForeignKey("fk_{{poll_vote}}_poll", "{{poll_vote}}", "poll_id", "{{poll_poll}}", "id", 'CASCADE', 'CASCADE');
+		$this->addForeignKey("fk_{{poll_vote}}_poll_choice", "{{poll_vote}}", "choice_id", "{{poll_choice}}", "id", 'CASCADE', 'CASCADE');
+		// $this->addForeignKey("fk_{{poll_vote}}_user_user", "{{poll_vote}}", "user_id", "{{user_user}}", "id", 'CASCADE', 'CASCADE');
 	}
 
 	public function safeDown()
 	{
 		$this->dropForeignKey("fk_{{poll_choice}}_poll", "{{poll_choice}}");
-		$this->dropForeignKey("fk_{{poll_vote}}_user_user", "{{poll_vote}}");
 		$this->dropForeignKey("fk_{{poll_vote}}_poll_choice", "{{poll_vote}}");
 		$this->dropForeignKey("fk_{{poll_vote}}_poll", "{{poll_vote}}");
+		// $this->dropForeignKey("fk_{{poll_vote}}_user_user", "{{poll_vote}}");
 
 		$this->dropTable('{{poll_poll}}');
 		$this->dropTable('{{poll_choice}}');

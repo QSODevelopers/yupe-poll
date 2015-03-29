@@ -18,7 +18,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Vote'); ?>
+		<?php echo CHtml::submitButton(Yii::t('PollModule.poll', 'Vote')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

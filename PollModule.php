@@ -142,21 +142,10 @@ class PollModule extends WebModule
 	public function getNavigation()
 	{
 		return [
-			['label' => Yii::t('PollModule.poll', 'Poll')],
 			[
 				'icon'  => 'glyphicon glyphicon-align-justify',
 				'label' => Yii::t('PollModule.poll', 'Poll'),
-				'url'   => ['/pull/pollBackend/index']
-			],
-			[
-				'icon'  => 'glyphicon glyphicon-check',
-				'label' => Yii::t('Poll choice', 'Poll choice'),
-				'url'   => ['/poll/pollChoiceBackend/index']
-			],
-			[
-				'icon'  => 'glyphicon glyphicon-comment',
-				'label' => Yii::t('PollModule.poll', 'Poll vote'),
-				'url'   => ['/poll/pollVoteBackend/index']
+				'url'   => ['/poll/pollBackend/index']
 			],
 		];
 	}

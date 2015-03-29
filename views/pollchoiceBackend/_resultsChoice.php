@@ -7,6 +7,6 @@
 	</div>
 	<div class="totals">
 		<span class="percent"><?php echo $percent; ?>%</span>
-		<span class="votes">(<?php echo $voteCount; ?> <?php echo $voteCount == 1 ? 'Vote' : 'Votes'; ?>)</span>
+		<span class="votes">(<?php echo $voteCount; ?> <?php echo $voteCount == 1 ? Yii::t('PollModule.poll', 'Vote') : Yii::t('PollModule.poll', 'Votes'); ?>)</span>
 	</div>
 </div>
