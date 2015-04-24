@@ -61,7 +61,7 @@ use yupe\components\WebModule;
 
 class PollModule extends WebModule
 {
-	const VERSION = '0.1';
+	const VERSION = '0.2';
 
 	public $defaultController = 'poll';
 
@@ -156,12 +156,6 @@ class PollModule extends WebModule
 			'poll.components.*',
 			'poll.models.*',
 		));
-
-		// $assetsFolder = Yii::app()->assetManager->publish(
-		// 	Yii::getPathOfAlias('application.modules.poll.assets')
-		// );
-		// Yii::app()->clientScript->registerCssFile($assetsFolder .'/poll.css');
-		
 		parent::init();
 	}
 

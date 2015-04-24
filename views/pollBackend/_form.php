@@ -106,7 +106,7 @@ $form = $this->beginWidget(
 		'bootstrap.widgets.TbButton', [
 			'buttonType' => 'submit',
 			'context'    => 'primary',
-			'label'      => Yii::t('poll', 'Сохранить Опрос и продолжить'),
+			'label'      => Yii::t('poll', 'Save and continue to vote'),
 		]
 	); ?>
 	<?php
@@ -114,7 +114,7 @@ $form = $this->beginWidget(
 		'bootstrap.widgets.TbButton', [
 			'buttonType' => 'submit',
 			'htmlOptions'=> ['name' => 'submit-type', 'value' => 'index'],
-			'label'      => Yii::t('poll', 'Сохранить Опрос и закрыть'),
+			'label'      => Yii::t('poll', 'Save and close the vote'),
 		]
 	); ?>
 

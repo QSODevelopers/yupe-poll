@@ -10,15 +10,15 @@
  **/
     $this->breadcrumbs = [
         Yii::app()->getModule('poll')->getCategory() => [],
-        Yii::t('PollModule.poll', 'Опросы') => ['/poll/pollBackend/index'],
-        Yii::t('PollModule.poll', 'Управление'),
+        Yii::t('PollModule.poll', 'Vote') => ['/poll/pollBackend/index'],
+        Yii::t('PollModule.poll', 'Manager'),
     ];
 
-    $this->pageTitle = Yii::t('PollModule.poll', 'Опросы - управление');
+    $this->pageTitle = Yii::t('PollModule.poll', 'Vote - manager');
 
     $this->menu = [
-        ['icon' => 'fa fa-fw fa-list-alt', 'label' => Yii::t('PollModule.poll', 'Управление Опросами'), 'url' => ['/poll/pollBackend/index']],
-        ['icon' => 'fa fa-fw fa-plus-square', 'label' => Yii::t('PollModule.poll', 'Добавить Опрос'), 'url' => ['/poll/pollBackend/create']],
+        ['icon' => 'fa fa-fw fa-list-alt', 'label' => Yii::t('PollModule.poll', 'Manage vote'), 'url' => ['/poll/pollBackend/index']],
+        ['icon' => 'fa fa-fw fa-plus-square', 'label' => Yii::t('PollModule.poll', 'Create vote'), 'url' => ['/poll/pollBackend/create']],
     ];
 ?>
 <div class="page-header">

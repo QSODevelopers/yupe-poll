@@ -10,21 +10,21 @@
  **/
     $this->breadcrumbs = [
         Yii::app()->getModule('poll')->getCategory() => [],
-        Yii::t('poll', 'Опросы') => ['/poll/pollBackend/index'],
-        Yii::t('poll', 'Добавление'),
+        Yii::t('poll', 'Vote') => ['/poll/pollBackend/index'],
+        Yii::t('poll', 'Create'),
     ];
 
-    $this->pageTitle = Yii::t('poll', 'Опросы - добавление');
+    $this->pageTitle = Yii::t('poll', 'Create vote');
 
     $this->menu = [
-        ['icon' => 'fa fa-fw fa-list-alt', 'label' => Yii::t('poll', 'Управление Опросами'), 'url' => ['/poll/pollBackend/index']],
-        ['icon' => 'fa fa-fw fa-plus-square', 'label' => Yii::t('poll', 'Добавить Опрос'), 'url' => ['/poll/pollBackend/create']],
+        ['icon' => 'fa fa-fw fa-list-alt', 'label' => Yii::t('poll', 'Delete vote'), 'url' => ['/poll/pollBackend/index']],
+        ['icon' => 'fa fa-fw fa-plus-square', 'label' => Yii::t('poll', 'Create vote'), 'url' => ['/poll/pollBackend/create']],
     ];
 ?>
 <div class="page-header">
     <h1>
-        <?php echo Yii::t('poll', 'Опросы'); ?>
-        <small><?php echo Yii::t('poll', 'добавление'); ?></small>
+        <?php echo Yii::t('poll', 'Vote'); ?>
+        <small><?php echo Yii::t('poll', 'Create'); ?></small>
     </h1>
 </div>
 
