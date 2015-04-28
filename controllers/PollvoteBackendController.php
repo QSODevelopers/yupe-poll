@@ -5,19 +5,19 @@ class PollvoteBackendController extends yupe\components\controllers\BackControll
 	/**
 	 * @return array action filters
 	 */
-/*  public function filters()
+  public function filters()
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
 		);
-	}*/
+	}
 
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
-/*  public function accessRules()
+  public function accessRules()
 	{
 		return array(
 			array('allow',
@@ -28,7 +28,7 @@ class PollvoteBackendController extends yupe\components\controllers\BackControll
 				'users'=>array('*'),
 			),
 		);
-	}*/
+	}
 
 	/**
 	 * Deletes a particular model.

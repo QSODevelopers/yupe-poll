@@ -5,10 +5,9 @@ return [
     ),
     'import' => [
         'application.modules.poll.models.*',
-        'application.modules.poll.components.*',
     ],
     'rules'     => array(
-        '/poll' => '/poll/default/index',
+        '/poll' => 'poll/default/index',
     ),
     'component' => array()
 ]

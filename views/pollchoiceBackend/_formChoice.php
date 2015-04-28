@@ -16,7 +16,7 @@
 			// Add AJAX delete link
 			echo CHtml::ajaxLink(
 				Yii::t('PollModule.poll', 'Delete'),[
-					'/poll/pollchoice/delete',
+					'/poll/pollchoiceBackend/delete',
 					'id'      => $choice->id,
 					'ajax'    => true
 				],[
